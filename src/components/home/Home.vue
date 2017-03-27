@@ -13,6 +13,13 @@
           
           <imagem-responsiva v-meu-transform:scale.animate="1.4" :url="foto.url" :titulo="foto.titulo" />
           
+          <router-link :to="{name: 'altera', params: {id : foto._id}}">
+            <meu-botao 
+              tipo="button" 
+              rotulo="ALTERAR" 
+              />
+          </router-link>
+
           <meu-botao 
             tipo="button" 
             rotulo="REMOVER" 
